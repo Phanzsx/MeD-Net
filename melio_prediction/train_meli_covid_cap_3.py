@@ -227,9 +227,9 @@ if __name__ == '__main__':
     num_img_s = 5
     num_classes = 3
     class_sub = ['meli_covid_other_3']
-    data_root = './data/data_48patch_16stride_np/'
-    singledata_root = './data/data_single_np/'
-    label_root = './data/label_cross_inter/' + class_sub[0] + '/'
+    data_root = './data/patch/'
+    singledata_root = './data/slice/'
+    label_root = './data/label/' + class_sub[0] + '/'
     for i in range(5):
         save_root = './temp/ablation/k=5/' + class_sub[0] + '#res34_WCE/' + str(i+1) + '/'
         if not os.path.exists(save_root):
