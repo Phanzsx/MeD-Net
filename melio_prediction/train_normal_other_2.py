@@ -229,7 +229,7 @@ if __name__ == '__main__':
     class_sub = ['normal_other_2']
     data_root = './data/patch/'
     singledata_root = './data/slice/'
-    label_root = './data/label_cross_inter/' + class_sub[0] + '/'
+    label_root = './data/label/' + class_sub[0] + '/'
     for i in range(5):
         save_root = './temp/ablation/k=1/' + class_sub[0] + '#res34_WCE/' + str(i+1) + '/'
         if not os.path.exists(save_root):
